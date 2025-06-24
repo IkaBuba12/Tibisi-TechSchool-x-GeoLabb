@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<link  rel="stylesheet" href="{{ url_for('static', filename='base.css') }}" />
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}My Store{% endblock %}</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 2em; }
+        .product-img { width: 200px; height: auto; }
+    </style>
+</head>
+<body>
+
+    <h1>{% block header %}Welcome to My Store{% endblock %}</h1>
+
+    <div>
+        {% block content %}{% endblock %}
+    </div>
+
+</body>
+</html>
